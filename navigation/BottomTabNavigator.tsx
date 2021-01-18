@@ -8,7 +8,8 @@ import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import TabOneScreen from '../screens/TabOneScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
-import { BottomTabParamList, TabOneParamList, TabTwoParamList } from '../types';
+import TabThreeScreen from '../screens/TabThreeScreen';
+import { BottomTabParamList, TabOneParamList, TabThreeParamList, TabTwoParamList } from '../types';
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
@@ -31,6 +32,13 @@ export default function BottomTabNavigator() {
                 component={TabTwoNavigator}
                 options={{
                     tabBarIcon: ({color}) => <IonIcon name="list" color={color}/>
+                }}
+            />
+            <BottomTab.Screen
+                name="Search"
+                component={TabThreeNavigator}
+                options={{
+                    tabBarIcon: ({color}) => <IonIcon name="search" color={color}/>
                 }}
             />
         </BottomTab.Navigator>
