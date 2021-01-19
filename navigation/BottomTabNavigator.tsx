@@ -85,3 +85,17 @@ function TabTwoNavigator() {
         </TabTwoStack.Navigator>
     );
 }
+
+const TabThreeStack = createStackNavigator<TabThreeParamList>();
+
+function TabThreeNavigator() {
+    return (
+        <TabThreeStack.Navigator>
+            <TabThreeStack.Screen
+                name="TabThreeScreen"
+                component={TabThreeScreen}
+                options={{headerTitle: 'Search'}}
+            />
+        </TabThreeStack.Navigator>
+    );
+}
