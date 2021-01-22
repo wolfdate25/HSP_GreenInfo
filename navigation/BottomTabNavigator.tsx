@@ -67,7 +67,7 @@ function TabOneNavigator() {
             <TabOneStack.Screen
                 name="TabOneScreen"
                 component={TabOneScreen}
-                options={{headerTitle: 'Home'}}
+                options={{headerTitle: '홈'}}
             />
         </TabOneStack.Navigator>
     );
@@ -95,7 +95,7 @@ function TabThreeNavigator() {
             <TabThreeStack.Screen
                 name="TabThreeScreen"
                 component={TabThreeScreen}
-                options={{headerTitle: 'Search'}}
+                options={{headerTitle: '검색'}}
             />
         </TabThreeStack.Navigator>
     );

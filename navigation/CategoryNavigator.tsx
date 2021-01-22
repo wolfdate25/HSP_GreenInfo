@@ -19,7 +19,7 @@ export default function CategoryNavigator() {
         <Stack.Navigator
             initialRouteName="Category"
         >
-            <Stack.Screen name="Category" component={TabTwoScreen}/>
+            <Stack.Screen name="Category" component={TabTwoScreen} options={{headerTitle:'카테고리'}}/>
             <Stack.Screen name="List" component={CategoryScreen} options={({route}) => ({title: route.params.type})}/>
         </Stack.Navigator>
     );
